@@ -1,11 +1,11 @@
-package org.example.microsservicespayments.controller;
+package org.example.microsservicespayments.presentation.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.microsservicespayments.dto.request.NewPaymentDTO;
-import org.example.microsservicespayments.dto.response.CompletePaymentDTO;
-import org.example.microsservicespayments.dto.response.PaymentDTO;
-import org.example.microsservicespayments.service.PaymentService;
+import org.example.microsservicespayments.application.dto.request.NewPaymentDTO;
+import org.example.microsservicespayments.application.dto.response.CompletePaymentDTO;
+import org.example.microsservicespayments.application.dto.response.PaymentDTO;
+import org.example.microsservicespayments.application.service.PaymentService;
 import org.example.microsservicespayments.utils.PaymentDtoMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

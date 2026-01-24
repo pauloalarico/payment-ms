@@ -1,9 +1,9 @@
-package org.example.microsservicespayments.service;
+package org.example.microsservicespayments.application.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.example.microsservicespayments.dto.request.NewPaymentDTO;
-import org.example.microsservicespayments.entitie.Payment;
+import org.example.microsservicespayments.application.dto.request.NewPaymentDTO;
+import org.example.microsservicespayments.domain.entitie.Payment;
 import org.example.microsservicespayments.infra.respository.PaymentRepository;
 import org.springframework.stereotype.Service;
 

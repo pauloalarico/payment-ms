@@ -1,8 +1,8 @@
 package org.example.microsservicespayments.utils;
 
-import org.example.microsservicespayments.dto.response.CompletePaymentDTO;
-import org.example.microsservicespayments.dto.response.PaymentDTO;
-import org.example.microsservicespayments.entitie.Payment;
+import org.example.microsservicespayments.application.dto.response.CompletePaymentDTO;
+import org.example.microsservicespayments.application.dto.response.PaymentDTO;
+import org.example.microsservicespayments.domain.entitie.Payment;
 import org.springframework.stereotype.Component;
 
 @Component

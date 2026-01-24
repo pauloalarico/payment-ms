@@ -1,4 +1,4 @@
-package org.example.microsservicespayments.dto.request;
+package org.example.microsservicespayments.application.dto.request;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;

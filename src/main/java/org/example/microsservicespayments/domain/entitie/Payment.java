@@ -1,10 +1,10 @@
-package org.example.microsservicespayments.entitie;
+package org.example.microsservicespayments.domain.entitie;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.example.microsservicespayments.dto.request.NewPaymentDTO;
-import org.example.microsservicespayments.enums.Status;
+import org.example.microsservicespayments.application.dto.request.NewPaymentDTO;
+import org.example.microsservicespayments.domain.enums.Status;
 
 import java.math.BigDecimal;
 import java.util.UUID;

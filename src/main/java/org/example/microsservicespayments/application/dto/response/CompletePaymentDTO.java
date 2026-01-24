@@ -1,4 +1,4 @@
-package org.example.microsservicespayments.dto.response;
+package org.example.microsservicespayments.application.dto.response;
 
 import java.time.ZonedDateTime;
 

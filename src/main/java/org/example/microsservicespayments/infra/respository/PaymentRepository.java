@@ -1,6 +1,6 @@
 package org.example.microsservicespayments.infra.respository;
 
-import org.example.microsservicespayments.entitie.Payment;
+import org.example.microsservicespayments.domain.entitie.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
