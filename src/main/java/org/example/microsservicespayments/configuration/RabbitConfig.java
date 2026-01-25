@@ -34,7 +34,7 @@ public class RabbitConfig {
 
     @Bean
     public FanoutExchange createExchange() {
-        return new FanoutExchange("orders-payed.ex");
+            return new FanoutExchange("orders-payed.ex");
     }
 
     @Bean

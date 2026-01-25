@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public record PaymentDTO(
         UUID paymentId,
-        UUID orderId,
+        UUID correlationId,
         BigDecimal amount,
         Status status
 ) {

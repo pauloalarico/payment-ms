@@ -20,7 +20,7 @@ public class PaymentService {
         if(!(dto.amount().doubleValue() > 0.0)) {
             throw new RuntimeException("Amount of payment cannot be less than 0");
         }
-        if(repository.hasPaymentForId(dto.orderId())) {
+        if(repository.hasPaymentForId(dto.correlationId())) {
             throw new RuntimeException("Payment already realized");
         }
         var payment = new Payment(dto);
