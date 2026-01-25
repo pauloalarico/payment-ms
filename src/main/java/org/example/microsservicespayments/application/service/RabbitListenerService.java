@@ -3,7 +3,6 @@ package org.example.microsservicespayments.application.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.microsservicespayments.application.dto.request.NewPaymentDTO;
-import org.example.microsservicespayments.application.dto.response.CompletePaymentDTO;
 import org.example.microsservicespayments.application.dto.response.PaymentDTO;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

@@ -18,8 +18,8 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "cd_idnt_payment", unique = true)
     private UUID paymentId;
-    @Column(name = "cd_idnt_order", unique = true)
-    private UUID orderId;
+    @Column(name = "cd_idnt_correlation", unique = true)
+    private UUID correlationId;
     @Column(name = "vl_payment")
     private BigDecimal amount;
     @Column(name = "cd_status")
@@ -27,7 +27,7 @@ public class Payment {
     private Status status;
 
     public Payment(NewPaymentDTO dto) {
-        this.orderId = dto.orderId();
+        this.correlationId = dto.correlationId();
         this.amount = dto.amount();
         this.status = Status.APPROVED;
     }

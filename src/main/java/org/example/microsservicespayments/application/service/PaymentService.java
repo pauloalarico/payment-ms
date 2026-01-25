@@ -31,7 +31,7 @@ public class PaymentService {
     }
 
     public Payment getPayment(String id) {
-        return repository.findPaymentById(UUID.fromString(id)).orElseThrow(() -> new RuntimeException("" +
+        return repository.findPaymentById(UUID.fromString(id)).orElseThrow(() -> new RuntimeException(
                 "Can not find the payment id."));
     }
 }

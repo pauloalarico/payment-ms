@@ -13,6 +13,6 @@ public record PaymentDTO(
         Status status
 ) {
     public PaymentDTO(Payment payment) {
-        this(payment.getPaymentId(), payment.getOrderId(), payment.getAmount(), payment.getStatus());
+        this(payment.getPaymentId(), payment.getCorrelationId(), payment.getAmount(), payment.getStatus());
     }
 }
