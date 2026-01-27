@@ -1,4 +1,4 @@
-package org.example.microsservicespayments.configuration;
+package org.example.microsservicespayments.infra.messaging.rabbitmq.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -3,7 +3,7 @@ package org.example.microsservicespayments.domain.entitie;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.example.microsservicespayments.application.dto.request.NewPaymentDTO;
+import org.example.microsservicespayments.application.dto.command.RegisterOrderPayment;
 import org.example.microsservicespayments.domain.enums.Status;
 
 import java.math.BigDecimal;
@@ -26,9 +26,9 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    public Payment(NewPaymentDTO dto) {
-        this.correlationId = dto.correlationId();
-        this.amount = dto.amount();
+    public Payment(RegisterOrderPayment command) {
+        this.correlationId = command.correlationId();
+        this.amount = command.amount();
         this.status = Status.APPROVED;
     }
 
