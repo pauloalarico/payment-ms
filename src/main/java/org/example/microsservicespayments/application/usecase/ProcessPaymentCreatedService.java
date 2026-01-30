@@ -4,7 +4,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.microsservicespayments.application.dto.command.RegisterOrderPayment;
 import org.example.microsservicespayments.application.dto.result.ResultPaymentOrder;
-import org.example.microsservicespayments.domain.entitie.Payment;
+import org.example.microsservicespayments.model.entitie.Payment;
 import org.example.microsservicespayments.infra.respository.PaymentRepository;
 import org.springframework.stereotype.Service;
 

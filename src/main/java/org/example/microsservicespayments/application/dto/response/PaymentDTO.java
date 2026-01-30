@@ -1,7 +1,7 @@
 package org.example.microsservicespayments.application.dto.response;
 
-import org.example.microsservicespayments.domain.entitie.Payment;
-import org.example.microsservicespayments.domain.enums.Status;
+import org.example.microsservicespayments.model.entitie.Payment;
+import org.example.microsservicespayments.model.enums.Status;
 
 import java.math.BigDecimal;
 import java.util.UUID;

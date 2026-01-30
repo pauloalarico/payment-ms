@@ -1,6 +1,6 @@
 package org.example.microsservicespayments.application.dto.result;
 
-import org.example.microsservicespayments.domain.enums.Status;
+import org.example.microsservicespayments.model.enums.Status;
 
 import java.math.BigDecimal;
 import java.util.UUID;

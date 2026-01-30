@@ -18,12 +18,6 @@ public class PaymentController {
     private final PaymentService paymentService;
     private final PaymentDtoMapper paymentDtoMapper;
 
-    /*@PostMapping
-    public ResponseEntity<CompletePaymentDTO> createPayment(@RequestBody @Valid RegisterOrderPaymentDTO dto) {
-        var payment = paymentService.createNewPayment(dto);
-        return ResponseEntity.ok(paymentDtoMapper.create(payment));
-    }*/
-
     @GetMapping("/{id}")
     public ResponseEntity<PaymentDTO> getPayment(@PathVariable String id) {
         var payment = paymentService.getPayment(id);
