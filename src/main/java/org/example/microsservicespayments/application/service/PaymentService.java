@@ -1,7 +1,7 @@
 package org.example.microsservicespayments.application.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.microsservicespayments.model.entitie.Payment;
+import org.example.microsservicespayments.domain.entitie.Payment;
 import org.example.microsservicespayments.infra.respository.PaymentRepository;
 import org.springframework.stereotype.Service;
 
