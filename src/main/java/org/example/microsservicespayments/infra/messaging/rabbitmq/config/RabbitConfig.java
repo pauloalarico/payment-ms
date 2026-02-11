@@ -18,11 +18,6 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitConfig {
 
     @Bean
-    public Queue createOrdered() {
-        return new Queue("orders-payed.queue", false);
-    }
-
-    @Bean
     public RabbitAdmin createAdmin(ConnectionFactory factory) {
         return new RabbitAdmin(factory);
     }
@@ -30,16 +25,6 @@ public class RabbitConfig {
     @Bean
     public ApplicationListener<ApplicationReadyEvent> initializeRabbit(RabbitAdmin rabbitAdmin) {
         return event -> rabbitAdmin.initialize();
-    }
-
-    @Bean
-    public FanoutExchange createExchange() {
-            return new FanoutExchange("orders-payed.ex");
-    }
-
-    @Bean
-    public Binding createOrderBinding(FanoutExchange exchange) {
-        return BindingBuilder.bind(createOrdered()).to(exchange);
     }
 
     @Bean
